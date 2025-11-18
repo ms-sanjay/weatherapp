@@ -10,6 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
     backdrop-filter: blur(4px);
+    position: absolute;
 }
 
 .Card {
@@ -22,6 +23,7 @@
     flex-direction: column;
     border-radius: 20px;
     backdrop-filter: blur(4px);
+    position: absolute;
 }
 
 .InputSection {
@@ -39,7 +41,7 @@ form{
     gap: 30px;
 }
 .InputBox {
-    height: 7vh;
+    height: 5vh;
     width: 25vw;
     border-radius: 40px;
     border: none;
@@ -50,8 +52,8 @@ form{
     padding-left: 30px;
 }
 .SearchButton {
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
     border: none;
     background-color:white;
@@ -79,18 +81,18 @@ form{
     margin-top: 20px;
     gap : 10px;
     img{
-        height: 300px;
-        width: 300px;
+        height: 200px;
+        width: 200px;
     }
 }
 .Temperature {
-    font-size: 48px;
+    font-size: 38px;
     margin: 10px 0;
     color:#111827b1;
 }
 
 .CityName {
-    font-size: 50px;
+    font-size: 40px;
     margin: 5px 0;
     color:#111827b1;
 }
@@ -98,26 +100,33 @@ form{
 .AdditionalInfo {
     display: flex;
     justify-content:space-around;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .Humidity, .WindSpeed {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 25px;
+    font-size: 15px;
     color:#111827b1;
 }
 .WindIcon {
    width: 60%;
    height: 80%;
    position: relative;
-    left: -30px;
+   left: -50px;
 }
 .HumidityIcon {
     width: 40%;
 }
 .Humidity{
+    h3{
+        position: relative;
+        left: -40px;
+    }
+}
+
+.WindSpeed{
     h3{
         position: relative;
         left: -30px;
