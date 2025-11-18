@@ -1,0 +1,16 @@
+.wind-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  backdrop-filter: blur(8px);
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.wind-overlay.fade-out {
+  opacity: 0;
+}
