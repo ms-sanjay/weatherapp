@@ -63,12 +63,11 @@ export default function Card() {
                             value={city}
                             onChange={(e) => setCity(e.target.value)}
                         />
-                        <button className="SearchButton"></button>
+                        <button className="SearchButton"> 🔍 </button>
                     </form>
 
                     {error && <p className="Error">{error}</p>}
-                </div>   
-
+                </div>
                 <div className="WeatherInfo">
                     <div className="WeatherIcon">
                             <Icon weather={weather?.weather?.[0]?.main} />
